@@ -45,7 +45,7 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
 });
 
 gulp.task('useminTrigger', ['deleteDistFolder'], function(){
-    gulp.setMaxListeners("usermin");
+    gulp.start("usemin");
 });
 
 gulp.task('usemin', [ 'styles','scripts'], function(){
